@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Task } from '../models/task';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ export class DataService {
 
   constructor() { }
   //method to store dataService
-  storeList( list:Array<string>){
+  storeList( list:Array<Task>){
     return new Promise( (resolve,reject)=>{
       let data = JSON.stringify( list );
       try {

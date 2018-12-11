@@ -1,4 +1,23 @@
-app-home{
-  background-color: lightblue;
 
+$item-padding: 1em;
+ion-item.task{
+  --background: lightyellow;
+  --inner-padding-start: $item-padding;
+  --inner-padding-end: $item-padding;
+  --inner-padding-top: $item-padding;
+  --inner-padding-bottom: $item-padding;
+}
+ion-item.task.done{
+  --background: blue;
+  --color: white;
+}
+ion-row.done{
+  --background:aliceblue;
+  opacity: 0.5;
+  h2.name{
+    text-decoration: line-through;
+  }
+}
+ion-item h2.name{
+  font-weight: bold;
 }
